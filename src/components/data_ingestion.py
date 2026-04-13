@@ -13,6 +13,9 @@ from src.components.data_transformation import DataTransformationConfig
 from src.components.model_trainer import ModelTrainer
 from src.components.model_trainer import ModelTrainerConfig
 
+from src.components.hyperparameter_tuning import HyperParameterTuning
+from src.components.hyperparameter_tuning import HyperParameterTuningConfig
+
 
 @dataclass
 class DataIngestionconfig: 
@@ -66,3 +69,6 @@ if __name__ == "__main__" :
 
     model_trainer = ModelTrainer()
     print(model_trainer.initiate_model_trainer(train_arr, test_arr))
+
+    hyperparameter_tuning = HyperParameterTuning()
+    print(hyperparameter_tuning.initiate_hyperparameter_tuning(train_arr, test_arr))
