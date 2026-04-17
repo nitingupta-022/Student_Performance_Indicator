@@ -41,3 +41,6 @@ def predict_datapoint() :
 # For AWS deployment, we need to run the app on host '0.0.0.0' 
 if __name__ == "__main__" : 
     app.run(host = '0.0.0.0')
+
+
+# http://127.0.0.1:5000/
